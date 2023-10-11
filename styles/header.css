@@ -1,0 +1,40 @@
+.header__principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.titulo__principal{
+    font-family: var(--fonte-principal);
+    cursor: default;
+    margin: 0;
+    padding: 0 0 0 2em;
+}
+
+.editP{
+    color: var(--dourado);
+}
+
+.header__titulo-lista ul{
+    list-style-type: none;
+    font-family: var(--fonte-principal);
+    font-weight: 100;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.header__titulo-lista li{
+    margin: 1.7em;   
+}
+.header__titulo-lista a{
+    text-decoration: none;
+    color: var(--branco);
+    transition: color 0.3s ease-in-out;
+}
+.header__titulo-lista a:hover{
+    color: var(--dourado);
+}

@@ -1,0 +1,61 @@
+.sections__principais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__welcome{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 10em 0 0 5em;
+    opacity: 0.5;
+    transition: 1s ease;
+}
+.section__welcome:hover{
+    opacity: 1;
+
+}
+
+.section__welcome-titulo{
+    font-weight: 400;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+.section__welcome-slogan{
+    font-weight: 100;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+.section__imagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.section__imagem img{
+    width: 30%;
+    padding:0 2em 0 0;
+    margin: 6em 0 0 0;
+    opacity: 20%;
+    border-radius: 5em 10em 5em 10em;
+    transition: opacity 0.3s ease;
+}
+.section__imagem img:hover{
+    opacity: 0.7;
+}
+
+.zapzapIcon{
+        display: flex; 
+        background: url('/imagens/whatsapp.svg') no-repeat center center;
+        
+}
+.zapzapIcon a{
+    padding: 0;
+    margin: 0;
+}
+
+
