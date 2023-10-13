@@ -1,146 +1,109 @@
-@import url("styles/header.css");
-@import url("styles/welcome.css");
-@import url("styles/footer.css");
-@import url("styles/sobrenos.css");
-
-:root {
-    --cor-de-fundo: #000000;
-    --branco: #FFFFFF;
-    --dourado: rgb(199, 186, 12);
-    --cinza: rgb(115, 115, 116);
-    --preto: #000000;
-    --gradient-insta: linear-gradient(45deg, #405de6, #d9db51, #833ab4, #c13584, #e1306c, #fd1d1d);
-    --fonte-principal: "Poppins";
-    --fonte-secundaria: "Josefin Sans";
-}
-
-[data-contexto="principal"] {
-    --main-bg-color: black;
-}
-[data-contexto="principal"] .imgPrincipal{
-    display: none;
-}
-
-[data-contexto="principal"] .imgPrincipalLocaliz{
-    display: none;
-}
-[data-contexto="principal"] .textoSobreUs{
-    display: none;
-}
-[data-contexto="principal"] .zapzapIcon{
-    display: none;
-}
-[data-contexto="principal"] .zapzap__text{
-    display: none;
-}
-[data-contexto="principal"] footer{
-    padding: 17em 0 0 0;
-}
-
-
-[data-contexto="about"] {
-    --main-bg-color: black;
-}
-[data-contexto="about"] .imgPrincipal {
-    display: none;
-}
-[data-contexto="about"] .imgPrincipalLocaliz{
-    display: none;
-}
-
-[data-contexto="about"] .zapzapIcon{
-    display: none;
-}
-
-[data-contexto="about"] .zapzap__text{
-    display: none;
-}
-
-[data-contexto="about"] footer{
-    padding: 2.2em 0 0 0;
-}
-
-[data-contexto="cortesStyle"] {
-    --main-bg-color: black;
-}
-[data-contexto="cortesStyle"] .textoSobreUs {
-    display: none;
-}
-[data-contexto="cortesStyle"] .imgPrincipalLocaliz{
-    display: none;
-}
-
-[data-contexto="cortesStyle"] .zapzapIcon{
-    display: none;
-}
-[data-contexto="cortesStyle"] .zapzap__text{
-    display: none;
-}
-
-[data-contexto="localizacao"] {
-    --main-bg-color: black;
-}
-[data-contexto="localizacao"] .imgPrincipal {
-    display: none;
-}
-[data-contexto="localizacao"] .textoSobreUs{
-    display: none;
-}
-[data-contexto="localizacao"] .zapzapIcon{
-    display: none;
-}
-[data-contexto="localizacao"] .zapzap__text{
-    display: none;
-}
-[data-contexto="localizacao"] .imgPrincipalLocaliz{
-    width: 70%;
-    padding: 2em 0 0 2em;
+.sections__principais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
-[data-contexto="localizacao"] footer{
-    padding: 9em 0 0 0;
+
+.section__welcome{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 10em 0 0 5em;
+    opacity: 0.5;
+    transition: 1s ease;
+}
+.section__welcome:hover{
+    opacity: 1;
+
 }
 
-
-
-[data-contexto="contato"] {
-    --main-bg-color: black;
-}
-[data-contexto="contato"] .section__welcome{
-    display: none;
-}
-[data-contexto="contato"] .imgPrincipal {
-    display: none;
-}
-[data-contexto="contato"] .imgPrincipalLocaliz{
-    display: none;
-}
-[data-contexto="contato"] .textoSobreUs{
-    display: none;
-}
-[data-contexto="contato"] footer{
-    padding: 16.2em 0 0 0;
-}
-[data-contexto="contato"] .zapzapIcon{
-    padding: 2em;
-    margin: 8em 0 0 0;
-}
-[data-contexto="contato"] footer .socialMedia{
-    display: none;
-}
-
-
-html {
-    background: var(--main-bg-color);
-    min-height: 100vh;
-    font-size: 10px;
-}
-
-
-body {
-    color: var(--branco);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
+.section__welcome-titulo{
     font-weight: 400;
-
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
 }
+
+.section__welcome-slogan{
+    font-weight: 100;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+.section__imagem{
+    display: flex;
+    flex-direction: row;
+}
+.section__imagem img{
+    width: 30%;
+    padding:0 2em 0 0;
+    margin: 6em 0 0 0;
+    opacity: 20%;
+    border-radius: 5em 10em 5em 10em;
+    transition: opacity 0.3s ease;
+}
+.section__imagem img:hover{
+    opacity: 0.7;
+}
+
+.section__imagem p{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 9em 5em 0 0;
+    margin: 0 0 0 23em;
+}
+
+.zapzapIcon{
+        display: flex; 
+        background: url('/imagens/whatsapp.svg') no-repeat center center;
+        
+}
+.zapzapIcon a{
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (max-width: 414px) and (max-height: 896px){
+    .header__principal{
+        padding: 0;
+        margin: 0;
+    }
+    .header__titulo{
+        padding: 0;
+        margin: 1em 0 0 0.5em;
+        width: 22%;
+    }
+    .titulo__principal{
+        margin: 0;
+        padding: 0;
+        width: 50%;
+    }
+    .header__titulo-lista li{
+        padding: 0;
+        margin: 0.3em;
+        font-size: 0.8em;
+    }
+    .section__welcome{
+        padding: 0;
+        margin: 0;
+    }
+
+    /*tela sobre mim */
+    .sections__principais{
+        display: block;
+        align-items: center;
+        padding: 5em 0 0 0;
+    }
+    .section__imagem{
+        margin: 0;
+        padding: 5em 0 0 0;
+    }
+    .section__imagem p{
+        text-align: center;
+        margin: 0;
+        padding: 1em;
+    }
+}
+
