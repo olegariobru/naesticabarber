@@ -15,7 +15,6 @@
 }
 .section__welcome:hover{
     opacity: 1;
-
 }
 
 .section__welcome-titulo{
@@ -34,13 +33,14 @@
 .section__imagem{
     display: flex;
     flex-direction: row;
+    margin: 0 0 0 20em;
 }
 .section__imagem img{
-    width: 30%;
+    width: 40%;
     padding:0 2em 0 0;
     margin: 6em 0 0 0;
     opacity: 20%;
-    border-radius: 5em 10em 5em 10em;
+    border-radius: 15% 10% 5% 10%;
     transition: opacity 0.3s ease;
 }
 .section__imagem img:hover{
@@ -51,7 +51,7 @@
     font-size: 0.8em;
     text-align: center;
     padding: 9em 5em 0 0;
-    margin: 0 0 0 23em;
+    margin: 0 0 0 2em;
 }
 
 .zapzapIcon{
@@ -85,25 +85,29 @@
         margin: 0.3em;
         font-size: 0.8em;
     }
-    .section__welcome{
-        padding: 0;
-        margin: 0;
-    }
-
+    
     /*tela sobre mim */
     .sections__principais{
         display: block;
         align-items: center;
-        padding: 15em 0 0 0;
+        padding: 7em 0 0 0;
     }
     .section__imagem{
         margin: 0;
-        padding: 5em 0 0 0;
+        display: block;
+        padding: 10em 0 0 0;
     }
     .section__imagem p{
         text-align: center;
         margin: 0;
         padding: 1em;
     }
+    .section__imagem img{
+        display: block;
+        width: 80%;
+        margin: 2em 0 0 2.5em;
+        padding: 0;
+    }
+    
 }
 
