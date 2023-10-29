@@ -13,7 +13,7 @@ Outra função que explorei muito foi a de rresponsividade da tela para aparelho
 
 ![image](https://github.com/olegariobru/naesticabarber/assets/50889311/2842b9af-70a3-4c4f-a1fd-d1a9253c86f4)
 
-##Responsividade 
+## Responsividade 
 
 ![image](https://github.com/olegariobru/naesticabarber/assets/50889311/53f95e4e-b1c8-4d5b-b590-9ee8f6983644)
 
